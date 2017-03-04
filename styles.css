@@ -1,0 +1,136 @@
+body {
+  font-family: Inconsolata, monospace;
+  font-size: 175%;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h4 {
+  font-size: 175%;
+}
+
+#banner {
+  background-image: url('assets/banner.jpg');
+  padding : 15px;
+  padding-bottom: 15px;
+  padding-top: 5%;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+#line {
+  border-top: 1px solid #8c8b8b;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Niconne', cursive;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#title {
+  font-size: 60px;
+  color: white;
+}
+
+#position {
+  font-size: 40px;
+  color: white;
+}
+
+#abstractWrapper div {
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.p-row div {
+  /*border: 1px solid black;*/
+  height: auto;
+  padding: 15px;
+}
+
+.p-row div div {
+  border: 1px solid black;
+}
+
+#portfolio {
+  margin-bottom: 20px;
+}
+
+
+#techSkills {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+#techSkills i {
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  #techSkills i {
+    display: inline-block;
+    font-size: 50px;
+    padding: 12px;
+  }
+}
+
+.t-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.t-row div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.t-row div span {
+  font-size: 85%;
+}
+
+@media (min-width: 600px) {
+  .t-row div span {
+    font-size: 80%;
+  }
+}
+
+img {
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+@media (min-width: 600px) {
+  img {
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+}
+
+.extended-text {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .extended-text {
+    display: inline;
+  }
+}
