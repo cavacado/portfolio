@@ -7,3 +7,5 @@ For my portfolio, I decided to adopt a simple approach, just a simple static fil
 Although a little plain, I feel that this provides a snapshot into my personality, that I prefer simple functioning applications to more complex ones.
 
 This webpage is mobile responsive, with the breakpoints located at 600px
+
+and the webpage is hosted on : https://cavacado.github.io/portfolio/
