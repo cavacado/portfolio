@@ -4,11 +4,27 @@ body {
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 250%;
 }
 
 h4 {
-  font-size: 175%;
+  font-size: 125%;
+}
+
+h5 {
+  font-size: 100%;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 300%;
+  }
+  h4 {
+    font-size: 175%;
+  }
+  h5 {
+    font-size: 150%;
+  }
 }
 
 #banner {
@@ -71,6 +87,7 @@ h4 {
   justify-content: center;
   padding: 20px;
   border: 1px solid black;
+  margin-bottom: 20px;
 }
 
 #techSkills i {
@@ -112,14 +129,14 @@ h4 {
 }
 
 img {
-  width: 300px;
+  width: 280px;
   border-radius: 5px;
   border: 1px solid black;
 }
 
 @media (min-width: 600px) {
   img {
-    width: 500px;
+    width: 490px;
     border-radius: 5px;
     border: 1px solid black;
   }
@@ -133,4 +150,11 @@ img {
   .extended-text {
     display: inline;
   }
+}
+
+#formForEmail {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
