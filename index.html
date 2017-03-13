@@ -218,18 +218,29 @@
       <div id='formForEmail' class='text-justify'>
         <h5>Then please feel free to drop your contact details below!</h5>
         <br>
+        
         <form action="https://formspree.io/ngzhaoloong@email.com" method="POST">
+          <input type="hidden" name="_subject" value="Website contact" />
           <div class='form-group'>
             <label>your name:</label>
             <input type="text" name="name" class='form-control' placeholder="name">
           </div>
           <div class='form-group'>
-            <label>your email adress:</label>
+            <label>your phone number:</label>
+            <input type="text" name="number" class='form-control' placeholder="phone number">
+          </div>
+          <div class='form-group'>
+            <label>your email address:</label>
             <input type="email" name="_replyto" class='form-control' placeholder="email address">
+          </div>
+          <div class='form-group'>
+            <label>your message:</label>
+            <textarea name="message" class='form-control' placeholder="message"></textarea>
           </div>
           <br>
           <button type="submit" class='btn btn-default'>Submit</button>
         </form>
+
         <br>
         <h5>Or if you are the traditional sort of person, you can always find me @:</h5>
         <br>
