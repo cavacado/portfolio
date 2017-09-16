@@ -1,4 +1,4 @@
-#portfolio repo
+# Portfolio repo
 
 This will be the holding repo of my digital portfolio website
 
