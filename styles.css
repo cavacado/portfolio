@@ -29,6 +29,7 @@ h5 {
 
 #banner {
   background-image: url('assets/banner.jpg');
+  background-size: cover;
   padding : 15px;
   padding-bottom: 15px;
   padding-top: 5%;
