@@ -16,6 +16,12 @@
       crossorigin="anonymous"
     />
     <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://unpkg.com/htmx.org@1.8.0"
+      integrity="sha384-cZuAZ+ZbwkNRnrKi05G/fjBX+azI9DNOkNYysZ0I/X5ZFgsmMiBXgDZof30F5ofc"
+      crossorigin="anonymous"
+      async
+    ></script>
   </head>
   <body>
     <div id="app">
@@ -145,11 +151,7 @@
             <div>
               <h4>spa (archived)</h4>
               <br />
-              <img
-                src="assets/spa-demo.gif"
-                alt="spa"
-                title="gif of spa"
-              />
+              <img src="assets/spa-demo.gif" alt="spa" title="gif of spa" />
               <br /><br />
               <p class="text-justify">
                 This project is titled:
@@ -271,6 +273,25 @@
           Thank you for taking your time to view my portfolio. I really hope
           that I would be able to hear from you!
         </h4>
+        <br />
+        <h4>Leave a comment!</h4>
+        <div class="container" id="formComment">
+          <form
+            id="comment-form"
+            hx-get="https://oaf3xpvoia.execute-api.ap-southeast-1.amazonaws.com/comments-form?post-id=example-post-id"
+            hx-trigger="load"
+          ></form>
+        </div>
+        <br />
+        <h4>Comments</h4>
+        <div class="container" id="formComment">
+          <div
+            id="comments-list"
+            hx-get="https://oaf3xpvoia.execute-api.ap-southeast-1.amazonaws.com/comments?post-id=example-post-id"
+            hx-swap="innerHTML"
+            hx-trigger="load"
+          ></div>
+        </div>
       </div>
     </div>
     <br />

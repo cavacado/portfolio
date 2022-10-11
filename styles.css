@@ -28,9 +28,9 @@ h5 {
 }
 
 #banner {
-  background-image: url('assets/banner.jpg');
+  background-image: url("assets/banner.jpg");
   background-size: cover;
-  padding : 15px;
+  padding: 15px;
   padding-bottom: 15px;
   padding-top: 5%;
   height: 300px;
@@ -46,9 +46,10 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Niconne', cursive;
+  font-family: "Niconne", cursive;
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 #title {
@@ -81,7 +82,6 @@ h5 {
 #portfolio {
   margin-bottom: 20px;
 }
-
 
 #techSkills {
   display: flex;
@@ -158,4 +158,25 @@ img {
   display: flex;
   flex-direction: column;
   padding: 20px;
+}
+
+#formComment {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.comment {
+  border-bottom: 1px solid;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 5px;
 }
