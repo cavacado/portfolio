@@ -16,9 +16,23 @@
       crossorigin="anonymous"
     />
     <link href="styles.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <script
-      src="https://unpkg.com/htmx.org@1.8.0"
-      integrity="sha384-cZuAZ+ZbwkNRnrKi05G/fjBX+azI9DNOkNYysZ0I/X5ZFgsmMiBXgDZof30F5ofc"
+      src="https://giscus.app/client.js"
+      data-repo="cavacado/portfolio"
+      data-repo-id="MDEwOlJlcG9zaXRvcnk4Mzg2NDgwOQ=="
+      data-category="General"
+      data-category-id="DIC_kwDOBP-s6c4CY4o_"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="en"
       crossorigin="anonymous"
       async
     ></script>
@@ -53,7 +67,9 @@
             <div>
               <h4>poc</h4>
               <br />
-              <a href="https://pipe-organising-concert.herokuapp.com/"
+              <a
+                href="https://master--warm-florentine-eb3d04.netlify.app/"
+                target="_blank"
                 ><img
                   src="assets/poc-demo.gif"
                   alt="poc"
@@ -274,24 +290,7 @@
           that I would be able to hear from you!
         </h4>
         <br />
-        <h4>Leave a comment!</h4>
-        <div class="container" id="formComment">
-          <form
-            id="comment-form"
-            hx-get="https://oaf3xpvoia.execute-api.ap-southeast-1.amazonaws.com/comments-form?post-id=example-post-id"
-            hx-trigger="load"
-          ></form>
-        </div>
-        <br />
-        <h4>Comments</h4>
-        <div class="container" id="formComment">
-          <div
-            id="comments-list"
-            hx-get="https://oaf3xpvoia.execute-api.ap-southeast-1.amazonaws.com/comments?post-id=example-post-id"
-            hx-swap="innerHTML"
-            hx-trigger="load"
-          ></div>
-        </div>
+        <div class="giscus" />
       </div>
     </div>
     <br />
